@@ -1,4 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0e0f;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  color: white;
+  font: 400 1rem "Roboto", sans-serif;
 }

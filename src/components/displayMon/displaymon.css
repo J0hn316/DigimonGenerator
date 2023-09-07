@@ -1,0 +1,16 @@
+.displayMon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.displayMon img {
+  width: 200px;
+}
+
+.displayMon p {
+  margin-top: 1rem;
+}
