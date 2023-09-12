@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchBox from "./components/searchbox/SearchBox";
 import DisplayMon from "./components/displayMon/DisplayMon";
+import PlayButton from "./components/play/PlayButton";
 
 function App() {
   const [item, setItem] = useState([]);

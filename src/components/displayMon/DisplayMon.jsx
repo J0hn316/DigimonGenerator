@@ -1,3 +1,4 @@
+import PlayButton from "../play/PlayButton";
 import "./displaymon.css";
 
 function DisplayMon({ digimon }) {
@@ -7,6 +8,7 @@ function DisplayMon({ digimon }) {
         <h1>{digimon[0]?.name}</h1>
         <p>Level: {digimon[0]?.level}</p>
         <img src={digimon[0]?.img} alt="Digimon" />
+        <PlayButton />
       </div>
     );
   }

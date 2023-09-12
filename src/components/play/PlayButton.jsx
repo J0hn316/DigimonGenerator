@@ -1,9 +1,11 @@
-import "../../../Audio/Digimon.mp3";
+import Music from "../../../Audio/Digimon.mp3";
 
 function PlayButton() {
   return (
     <div>
-      <button>Play Music</button>
+      <audio controls src={Music} typeof="audio/mp3" width="100px">
+        Music
+      </audio>
     </div>
   );
 }
