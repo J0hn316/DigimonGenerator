@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SearchBox from "./components/searchbox/SearchBox";
 import DisplayMon from "./components/displayMon/DisplayMon";
+import BackGround from "./components/background/BackGound";
 import PlayButton from "./components/play/PlayButton";
+import "./app.css";
 
 function App() {
   const [item, setItem] = useState([]);
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <BackGround />
       <SearchBox searchMon={getMon} />
       <DisplayMon digimon={item} />
     </div>

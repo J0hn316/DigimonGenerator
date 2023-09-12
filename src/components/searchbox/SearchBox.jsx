@@ -17,16 +17,18 @@ function SearchBox({ searchMon }) {
 
   return (
     <div className="searchBox">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="searchterm"
-          onChange={update}
-          value={searchdata.searchterm}
-          placeholder="Digimon Name"
-        />
-        <button>🔎</button>
-      </form>
+      <nav>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="searchterm"
+            onChange={update}
+            value={searchdata.searchterm}
+            placeholder="Digimon Name"
+          />
+          <button>🔎</button>
+        </form>
+      </nav>
     </div>
   );
 }

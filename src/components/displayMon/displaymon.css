@@ -8,9 +8,13 @@
 }
 
 .displayMon img {
-  width: 200px;
+  border: 5px black solid;
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  width: 300px;
 }
 
 .displayMon p {
-  margin-top: 1rem;
+  font: 400 1rem "Roboto", sans-serif;
 }
