@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "./searchbox.css";
+import "./searchbar.css";
 
-function SearchBox({ searchMon }) {
+function SearchBar({ searchMon }) {
   const [searchdata, setSearchData] = useState({ searchterm: "" });
 
   function update(e) {
@@ -16,7 +16,7 @@ function SearchBox({ searchMon }) {
   }
 
   return (
-    <div className="searchBox">
+    <div className="searchBar">
       <nav>
         <form onSubmit={handleSubmit}>
           <input
@@ -33,4 +33,4 @@ function SearchBox({ searchMon }) {
   );
 }
 
-export default SearchBox;
+export default SearchBar;
