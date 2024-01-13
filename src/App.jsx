@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
-import SearchBar from "./components/searchbox/SearchBar";
-import DisplayMon from "./components/displayMon/DisplayMon";
-import BackGround from "./components/background/BackGound";
-import "./app.css";
+import { useEffect, useState } from 'react';
+import SearchBar from './components/searchbox/SearchBar';
+import DisplayMon from './components/displayMon/DisplayMon';
+import BackGround from './components/background/BackGound';
+import DigimonButton from './components/button/DigimonButton';
+import './app.css';
 
 function App() {
   const [item, setItem] = useState([]);
+
+  const handleDigimonSelect = (selectedDigimon) => {
+    console.log(selectedDigimon);
+  };
 
   const getMon = async (name) => {
     try {
@@ -20,13 +25,14 @@ function App() {
   };
 
   useEffect(() => {
-    getMon("Agumon");
+    getMon('Agumon');
   }, []);
 
   return (
     <div className="App">
       <BackGround />
       <SearchBar searchMon={getMon} />
+      <DigimonButton onSelect={handleDigimonSelect} />
       <DisplayMon digimon={item} />
     </div>
   );

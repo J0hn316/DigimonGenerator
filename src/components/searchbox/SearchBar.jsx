@@ -1,9 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import "./searchbar.css";
+import { useState } from 'react';
+import './searchbar.css';
 
 function SearchBar({ searchMon }) {
-  const [searchdata, setSearchData] = useState({ searchterm: "" });
+  const [searchdata, setSearchData] = useState({ searchterm: '' });
 
   function update(e) {
     setSearchData({ ...searchdata, [e.target.name]: e.target.value });
